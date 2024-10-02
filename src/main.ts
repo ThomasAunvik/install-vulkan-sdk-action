@@ -148,7 +148,7 @@ async function run(): Promise<void> {
       // We set PATH, VULKAN_SDK, VK_LAYER_PATH, LD_LIBRARY_PATH and additionally VULKAN_VERSION.
 
       // export PATH=$VULKAN_SDK/bin:$PATH
-      core.addPath(`${install_path}`)
+      core.addPath(`${install_path}/bin`)
       core.info(`✔️ [PATH] Added path to Vulkan SDK to environment variable PATH.`)
 
       // export VULKAN_SDK=~/vulkan/1.x.yy.z/x86_64
